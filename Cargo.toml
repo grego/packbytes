@@ -1,0 +1,18 @@
+[package]
+name = "packbytes"
+version = "0.1.0"
+edition = "2021"
+authors = ["Maroš Grego <maros@grego.site>"]
+description = "Convert structures to and from packed representavises - byte arrays of fixed size that live on stack"
+repository = "https://github.com/grego/packbytes"
+keywords = ["packed", "bytes", "endian", "transmute", "binary"]
+categories = ["data-structures", "encoding", "no-std::no-alloc", "parsing", "rust-patterns"]
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+packbytes-derive = { path = "packbytes-derive", version = "0.1", optional = true }
+
+[features]
+default = ["packbytes-derive", "std"]
+std = []

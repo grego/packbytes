@@ -1,0 +1,18 @@
+[package]
+name = "packbytes-derive"
+version = "0.1.0"
+edition = "2021"
+authors = ["Maroš Grego <maros@grego.site>"]
+description = "Derive macros for the packbytes crate"
+repository = "https://github.com/grego/packbytes"
+keywords = ["packed", "bytes", "endian", "transmute", "binary"]
+categories = ["data-structures", "encoding", "no-std::no-alloc", "parsing", "rust-patterns"]
+license = "MIT"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+syn = { version = "2", features = ["full"] }
