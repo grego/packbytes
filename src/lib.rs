@@ -183,8 +183,8 @@ pub trait ToBytes: Sized {
     /// constant `PREFERS_LE`.
     #[cfg(feature = "std")]
     #[inline]
-    fn write_packed<W: std::io::Write>(self, writer: &mut W) -> std::io::Result<usize> {
-        writer.write(self.to_bytes().as_ref())
+    fn write_packed<W: std::io::Write>(self, writer: &mut W) -> std::io::Result<()> {
+        writer.write_all(self.to_bytes().as_ref())
     }
 }
 

@@ -1,6 +1,6 @@
 [package]
 name = "packbytes"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["Maroš Grego <maros@grego.site>"]
 description = "Convert structures to and from packed representavises - byte arrays of fixed size that live on stack"
